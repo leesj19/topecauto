@@ -29,8 +29,8 @@ DEBUG_DPI = 200
 # ✅ CLOVA OCR 설정
 # ============================================================
 # 1) 환경변수에서 읽기(권장) 또는 아래에 직접 문자열 넣기
-CLOVA_OCR_API_URL = "https://evchbi4wkk.apigw.ntruss.com/custom/v1/49766/f8a38aec41ce74176f423000171b31e914d1733f226b0c6a2abc5c70ae3910ae/general"
-CLOVA_OCR_SECRET  = "a01XZVREYkpTQ0d3YnBuY2lvYldnVGVLdHRib2Z2SHc="
+CLOVA_OCR_API_URL = "l"
+CLOVA_OCR_SECRET  = ""
 
 # OCR 결과 캐시(같은 PDF 반복 테스트 시 비용/시간 절약)
 CACHE_OCR_JSON = f"clova_ocr_cache_{Path(PDF_PATH).stem}.json"
@@ -617,3 +617,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

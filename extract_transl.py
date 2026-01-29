@@ -31,12 +31,11 @@ TOP_RATIO = 0.30
 # ============================================================
 CLOVA_OCR_API_URL = os.environ.get(
     "CLOVA_OCR_API_URL",
-    "https://evchbi4wkk.apigw.ntruss.com/custom/v1/49766/f8a38aec41ce74176f423000171b31e914d1733f226b0c6a2abc5c70ae3910ae/general"
+    ""
 )
 CLOVA_OCR_SECRET = os.environ.get(
     "CLOVA_OCR_SECRET",
-    "a01XZVREYkpTQ0d3YnBuY2lvYldnVGVLdHRib2Z2SHc="
-)
+    "
 
 CACHE_OCR_JSON = f"clova_ocr_cache_{Path(PDF_PATH).stem}.json"
 USE_CACHE_IF_EXISTS = False
@@ -538,3 +537,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
